@@ -1,64 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0d0b12">
-  <title>For You ♥</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="stars"></div>
-  <main>
-    <section class="hero" id="hero">
-      <div class="eyebrow">A little something I made for you</div>
-      <h1>Hey, <span id="nameTop">Nour</span> ♥</h1>
-      <p class="subtitle">I could've bought you a gift.<br>But I wanted to make you one.</p>
-      <button class="primary" id="openBtn">Open your gift <span>→</span></button>
-      <div class="hint">Best experienced with sound on</div>
-    </section>
-
-    <section class="story hidden" id="story">
-      <div class="card intro reveal">
-        <span class="tag">01 · THE IDEA</span>
-        <h2>Some people get a gift.<br><em>You get a little website.</em></h2>
-        <p>Because some things are better when they are made, not bought.</p>
-      </div>
-
-      <div class="memory reveal">
-        <div class="photo-placeholder">YOUR<br>PHOTO</div>
-        <div>
-          <span class="tag">02 · A MEMORY</span>
-          <h3>One of many moments worth keeping.</h3>
-          <p>Replace this with a photo and a short memory. Keep it simple. The website does the dramatic part.</p>
-        </div>
-      </div>
-
-      <div class="reasons reveal">
-        <span class="tag">03 · LITTLE THINGS</span>
-        <h2>Three things I love about you.</h2>
-        <div class="reason-grid">
-          <div><b>01</b><strong>Your smile</strong><p>Even on the days when you don't notice it.</p></div>
-          <div><b>02</b><strong>Your chaos</strong><p>Annoying sometimes. Somehow still my favorite.</p></div>
-          <div><b>03</b><strong>Just you</strong><p>No clever explanation needed for this one.</p></div>
-        </div>
-      </div>
-
-      <div class="letter reveal">
-        <span class="tag">04 · A NOTE</span>
-        <h2>Okay, enough website nonsense.</h2>
-        <p id="message">Happy birthday, Nour. I hope this year gives you more reasons to smile, more moments worth remembering, and a lot of things you didn't even know you wanted. And yes, I spent actual time making this instead of just sending you a "happy birthday" message at 12:00 AM.</p>
-        <p class="signature">— Mohamed</p>
-      </div>
-
-      <div class="ending reveal">
-        <div class="heart">♥</div>
-        <h2>That's it.</h2>
-        <p>Except it isn't.<br>This is just the beginning.</p>
-        <button class="secondary" id="againBtn">Read it again</button>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090b"><title>A little surprise</title><link rel="stylesheet" href="style.css"></head><body><main>
+<section class="screen active" id="s0"><div class="top"><span>PRIVATE</span><span>01 / 05</span></div><div class="center"><div class="star">✦</div><small>A SMALL THING MADE FOR ONE PERSON</small><h1>Hey, <i>Nour</i>.</h1><p>I have something for you.<br>It'll take less than a minute.</p><button data-next="s1">I'm listening →</button></div></section>
+<section class="screen" id="s1"><div class="top"><span>THE FILE</span><span>02 / 05</span></div><div class="center"><small>STATUS: OPEN</small><h2>I could've just bought you something.</h2><p>But that felt a little too easy.</p><pre>const gift = {<br>  thought: "a lot",<br>  effort: "yes",<br>  cheese: "minimal"<br>};</pre><button data-next="s2">Continue →</button></div></section>
+<section class="screen" id="s2"><div class="top"><span>MEMORY LOG</span><span>03 / 05</span></div><div class="center wide"><small>TAP EACH CARD</small><h2>Three tiny things.</h2><div class="cards">
+<button class="card" data-text="The ordinary moments that somehow became favorites."><b>01</b><strong>That one day</strong><span>tap to reveal</span></button>
+<button class="card" data-text="The stupid jokes and conversations that make no sense to anyone else."><b>02</b><strong>Our nonsense</strong><span>tap to reveal</span></button>
+<button class="card" data-text="And honestly? Having you around makes normal days less normal."><b>03</b><strong>You, basically</strong><span>tap to reveal</span></button>
+</div><button id="next2" class="hidden">One more thing →</button></div></section>
+<section class="screen" id="s3"><div class="top"><span>MESSAGE</span><span>04 / 05</span></div><div class="center"><small>NO FILTER</small><h2>Okay, serious for 30 seconds.</h2><div class="letter">Happy birthday, Nour.<br><br>I hope this year gives you a lot of reasons to be happy, a few stories worth telling, and exactly the kind of moments you wish you could replay.<br><br>And yes, I actually made a whole website instead of sending a message at 12:00 AM and pretending that was enough.</div><button data-next="s4">There is a last part →</button></div></section>
+<section class="screen final" id="s4"><div class="top"><span>DONE</span><span>05 / 05</span></div><div class="center"><div class="heart">♥</div><small>FILE CLOSED</small><h1>That's all.</h1><p>For now.</p><div class="stamp">MADE<br>JUST<br>FOR YOU</div><button id="restart" class="ghost">Start over ↻</button></div></section>
+</main><script src="script.js"></script></body></html>
