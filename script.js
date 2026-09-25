@@ -1,1 +1,4 @@
-const screens=[...document.querySelectorAll('.screen')];function go(id){screens.forEach(s=>s.classList.toggle('active',s.id===id))}document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()=>go(b.dataset.next));const cards=[...document.querySelectorAll('.card')],next=document.querySelector('#next2');cards.forEach(c=>c.onclick=()=>{if(!c.classList.contains('open')){c.classList.add('open');c.querySelector('span').textContent=c.dataset.text;if(cards.every(x=>x.classList.contains('open')))next.classList.remove('hidden')}});next.onclick=()=>go('s3');document.querySelector('#restart').onclick=()=>{cards.forEach(c=>{c.classList.remove('open');c.querySelector('span').textContent='tap to reveal'});next.classList.add('hidden');go('s0')}
+const pages=[...document.querySelectorAll(".page")];
+function go(id){pages.forEach(p=>p.classList.toggle("active",p.id===id));}
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+document.getElementById("restart").addEventListener("click",()=>go("p0"));

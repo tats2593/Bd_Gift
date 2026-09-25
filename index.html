@@ -1,11 +1,77 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090b"><title>A little surprise</title><link rel="stylesheet" href="style.css"></head><body><main>
-<section class="screen active" id="s0"><div class="top"><span>PRIVATE</span><span>01 / 05</span></div><div class="center"><div class="star">✦</div><small>A SMALL THING MADE FOR ONE PERSON</small><h1>Hey, <i>Nour</i>.</h1><p>I have something for you.<br>It'll take less than a minute.</p><button data-next="s1">I'm listening →</button></div></section>
-<section class="screen" id="s1"><div class="top"><span>THE FILE</span><span>02 / 05</span></div><div class="center"><small>STATUS: OPEN</small><h2>I could've just bought you something.</h2><p>But that felt a little too easy.</p><pre>const gift = {<br>  thought: "a lot",<br>  effort: "yes",<br>  cheese: "minimal"<br>};</pre><button data-next="s2">Continue →</button></div></section>
-<section class="screen" id="s2"><div class="top"><span>MEMORY LOG</span><span>03 / 05</span></div><div class="center wide"><small>TAP EACH CARD</small><h2>Three tiny things.</h2><div class="cards">
-<button class="card" data-text="The ordinary moments that somehow became favorites."><b>01</b><strong>That one day</strong><span>tap to reveal</span></button>
-<button class="card" data-text="The stupid jokes and conversations that make no sense to anyone else."><b>02</b><strong>Our nonsense</strong><span>tap to reveal</span></button>
-<button class="card" data-text="And honestly? Having you around makes normal days less normal."><b>03</b><strong>You, basically</strong><span>tap to reveal</span></button>
-</div><button id="next2" class="hidden">One more thing →</button></div></section>
-<section class="screen" id="s3"><div class="top"><span>MESSAGE</span><span>04 / 05</span></div><div class="center"><small>NO FILTER</small><h2>Okay, serious for 30 seconds.</h2><div class="letter">Happy birthday, Nour.<br><br>I hope this year gives you a lot of reasons to be happy, a few stories worth telling, and exactly the kind of moments you wish you could replay.<br><br>And yes, I actually made a whole website instead of sending a message at 12:00 AM and pretending that was enough.</div><button data-next="s4">There is a last part →</button></div></section>
-<section class="screen final" id="s4"><div class="top"><span>DONE</span><span>05 / 05</span></div><div class="center"><div class="heart">♥</div><small>FILE CLOSED</small><h1>That's all.</h1><p>For now.</p><div class="stamp">MADE<br>JUST<br>FOR YOU</div><button id="restart" class="ghost">Start over ↻</button></div></section>
-</main><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>Mariam × Ziad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div>
+
+<main>
+  <section class="page active" id="p0">
+    <nav><span>M × Z</span><span>001</span></nav>
+    <div class="hero">
+      <div class="orb">✦</div>
+      <p class="eyebrow">A LITTLE DIGITAL SOMETHING</p>
+      <h1>Mariam,<br><em>this is for you.</em></h1>
+      <p class="sub">No occasion. No particular reason.<br>Just because I felt like making something.</p>
+      <button class="gold-btn" data-go="p1">Open it <span>↗</span></button>
+    </div>
+  </section>
+
+  <section class="page" id="p1">
+    <nav><span>THE ARCHIVE</span><span>002</span></nav>
+    <div class="content">
+      <p class="eyebrow">ENTRY 01</p>
+      <h2>Some moments deserve<br><em>a place to live.</em></h2>
+      <div class="photo"><img src="https://picsum.photos/id/1011/900/1100" alt="Test memory"></div>
+      <div class="caption"><span>TEST MEMORY / 01</span><p>That random day that was supposed to be ordinary, but somehow became one of the good ones.</p></div>
+      <button class="text-btn" data-go="p2">Keep going →</button>
+    </div>
+  </section>
+
+  <section class="page" id="p2">
+    <nav><span>THE ARCHIVE</span><span>003</span></nav>
+    <div class="content">
+      <p class="eyebrow">ENTRY 02</p>
+      <h2>Three things<br><em>worth keeping.</em></h2>
+      <div class="tiles">
+        <article><b>01</b><h3>The laughs</h3><p>The kind that make absolutely no sense five minutes later.</p></article>
+        <article><b>02</b><h3>The chaos</h3><p>Because apparently normal was never really the plan.</p></article>
+        <article><b>03</b><h3>The little things</h3><p>The tiny details that quietly make a person unforgettable.</p></article>
+      </div>
+      <button class="text-btn" data-go="p3">There's more →</button>
+    </div>
+  </section>
+
+  <section class="page" id="p3">
+    <nav><span>A NOTE</span><span>004</span></nav>
+    <div class="content note-page">
+      <p class="eyebrow">FROM ZIAD</p>
+      <div class="quote-mark">“</div>
+      <p class="note">Mariam, this isn't for a birthday, an anniversary, or any special occasion. I just wanted to leave you something that exists because I made it for you.<br><br>
+      Maybe one day we'll look back at this tiny website and laugh at how unnecessarily dramatic it was.<br><br>
+      Until then, consider this a small reminder that you matter.</p>
+      <p class="sign">— Ziad</p>
+      <button class="gold-btn" data-go="p4">One last thing <span>↗</span></button>
+    </div>
+  </section>
+
+  <section class="page final" id="p4">
+    <nav><span>END OF ARCHIVE</span><span>005</span></nav>
+    <div class="hero">
+      <div class="final-photo"><img src="https://picsum.photos/id/1027/700/700" alt="Test portrait"></div>
+      <p class="eyebrow">FILE CLOSED</p>
+      <h1>Mariam <em>×</em> Ziad</h1>
+      <p class="sub">A small thing made with a little too much effort.</p>
+      <button class="text-btn" id="restart">↻ Start again</button>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
